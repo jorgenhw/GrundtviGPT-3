@@ -1,0 +1,70 @@
+---
+title: "Web scraping"
+author: "Jørgen Højlund Wibe"
+date: "1/11/2022"
+output: html_document
+---
+
+```{r}
+pacman::p_load(RSelenium, dplyr, magrittr, stringr, rvest, tidyverse)
+```
+
+```{r}
+# Getting URLs
+searchresults <- read_html("https://hojskolesangbogen.dk/om-sangbogen/historie-om-bogen/19-udgave/liste-over-alle-sangene")
+
+urls <- searchresults %>% html_nodes("a") %>% html_attr("href") 
+
+# Isolating urls pointing to songs (selected by manual inspection)
+urls <- urls[108:713]
+
+# Adding missing URL to the url's
+urls <- paste0("https://hojskolesangbogen.dk",urls)
+```
+
+```{r}
+# checking structure of html pages
+read_html(urls[1]) %>% html_nodes("div.rich-text") %>% html_text()
+```
+
+As can be from the structure on the site, the song texts are located in the second [2] element on the pages. This is what we'll call in the following loop.
+
+```{r}
+# Making empty vector
+text2 <- vector("list", length = length(urls))
+
+#text2 <- as.tibble()
+# Scraping song texts
+for (i in 1:length(urls)) {
+  text <- read_html(urls[i]) %>% html_nodes("div.rich-text") %>% html_text()
+  text2[i] <- text[2]
+}
+
+# convert list to dataframe (a bit more tricky since it's a nested list)
+n <- length(text2[[1]])
+df <- structure(text2, row.names = c(NA, -n), class = "data.frame")
+
+# Convert columns to rows
+d2 <- data.frame(t(df))
+
+# adding an ID column
+d2$ID <- 1:nrow(d2)
+
+# changing the order of columns (ID first)
+d2 <- d2[, c(2, 1)]
+
+d2
+
+#filtering actual songs (by criteria starting with \n1)
+songs <- filter(d2, grepl("^\\n1", text))
+
+# Ending up with 413 songs against 601 songs
+
+# Saving dataframe
+write_csv2(songs, "/Users/wibe/Desktop/sangtekster.csv")
+```
+
+
+Instead of the original 601 songs we end up with only 413. A central reason for this is that the website does not contain the song tects for many of the songs but instead has a youtube video with the song. 
+
+
