@@ -1,3 +1,20 @@
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/emiltj/NLP_exam_2021">
+    <img src="README_images/nlp2.png" alt="Logo" width=150 height=150>
+  </a>
+  
+  <h1 align="center">GrundtviGPT-3</h1> 
+  <h3 align="center">Cognitive Science Bachelor's 2021</h3> 
+
+
+  <p align="center">
+    Jørgen Højlund Wibe & Niels Aalund Krogsgaard
+  </p>
+</p>
+
+# 
 # Finetuning GPT-3 on Lyrics Generation
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1S0gwDVc3tvnO3uvM8i3oOiAPHBFZoKXH#scrollTo=VJftXkxeX6hu)
 
