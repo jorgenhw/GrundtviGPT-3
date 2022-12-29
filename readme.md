@@ -43,43 +43,48 @@ pip install -r requirements.txt
 export OPENAI_API_KEY=your_api_key
 ```
 ## Data
-We will be using a dataset of song lyrics as our training data. You can use any dataset of song lyrics that you like, or you can scrape lyrics from the internet. Make sure to preprocess the data and save it in a .txt file.
+We will be using a dataset of song lyrics from *Højskolesangbogen* as our training data. You can use any dataset of song lyrics that you like, or you can scrape lyrics from the internet. Make sure to preprocess the data and save it in a .txt or .csv file.
 
 ## Finetuning
-1. Choose the GPT-3 model that you want to use for finetuning. You can find a list of available models and their sizes here.
+1. Choose the GPT-3 model that you want to use for finetuning. You can find a list of available models and their sizes here: https://beta.openai.com/docs/models/gpt-3
 
-2. Fine-tune the model on your dataset using the OpenAI API:
+2. Set your hyperparameters
+```
+model = 'davinci'  # can be ada, babbage, curie or davinci
+n_epochs = 4
+batch_size = 4
+learning_rate_multiplier = 0.1
+prompt_loss_weight = 0.1
+```
+Replace 'davinci' with the model that you have chosen
+
+3. Fine-tune the model on your dataset using the OpenAI API:
 
 ```
-openai train \
-  --model-engine gpt2 \
-  --model-size medium \
-  --dataset dataset.txt \
-  --num-epochs 10 \
-  --output-path model.bin
+!openai api fine_tunes.create \
+    -t $train_file \
+    -m $model \
+    --n_epochs $n_epochs \
+    --batch_size $batch_size \
+    --learning_rate_multiplier $learning_rate_multiplier \
+    --prompt_loss_weight $prompt_loss_weight
 ```
 
-Replace medium with the size of the model that you have chosen, and dataset.txt with the path to your dataset.
 
 ## Evaluation
 Evaluate the performance of the finetuned model by generating lyrics and comparing them to a sample of the training data. You can also use metrics such as perplexity and BLEU score to quantitatively evaluate the model.
 
 ## Conclusion
-In this project, we have successfully finetuned the GPT-3 model on a lyrics generation task. You can further improve the performance of the model by using a larger dataset, increasing the number of training epochs, or fine-tuning on a specific artist or genre.
+In this project, we have successfully finetuned the GPT-3 model on a lyrics generation task. You can further improve the performance of the model by using a larger dataset, increasing the number of training epochs, fine-tuning on a specific artist or genre and last but not least, optimizing the hyperparameters.
 
 ## Contact
 
-Feel free to contact the authors, [Emil Jessen](https://github.com/emiltj) or [Johan Horsmans](https://github.com/johanHorsmans) for any questions regarding the scripts.
-You may do so through our emails ([Emil](mailto:201807525@post.au.dk), [Johan](mailto:201810219@post.au.dk))
+Feel free to contact the authors, [Jørgen Højlund Wibe](https://github.com/jorgenhw) or [Niels Aalund Krogsgaard](https://github.com/nielsaak) for any questions regarding the project.
+You may do so through our emails ([Jørgen](mailto:201807750@post.au.dk), [Niels](mailto:202008114@post.au.dk))
 <br />
 
 
-
-
-The two files in this folder contains instructions on how to replicate the results found in the paper: GrundtviGPT-3: Lyric
-generation by a Large Language Model.
-
-These results are part of an exam projekt in Cultural Data Science at Aarhus University, 2022.
+These project is part of an exam projekt in Cultural Data Science at Aarhus University, 2022.
 
 Authors:
 Jørgen Højlund Wibe
