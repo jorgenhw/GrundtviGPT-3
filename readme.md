@@ -1,8 +1,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/emiltj/NLP_exam_2021">
-    <img src="README_images/nlp2.png" alt="Logo" width=150 height=150>
+  <a href="https://i.imgur.com/t8mSDQS.png">
+    <img src="https://i.imgur.com/t8mSDQS.png" alt="Logo" width=150 height=150>
   </a>
   
   <h1 align="center">GrundtviGPT-3</h1> 
