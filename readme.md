@@ -6,7 +6,8 @@
   </a>
   
   <h1 align="center">GrundtviGPT-3</h1> 
-  <h3 align="center">Cognitive Science Bachelor's 2021</h3> 
+  <h3 align="center">Cognitive Science Bachelor's 2023</h3>
+  <h4 align="center">Exam project, Cultural Data Science 2023</h4>
 
 
   <p align="center">
