@@ -10,7 +10,7 @@ pacman::p_load(RSelenium, dplyr, magrittr, stringr, rvest, tidyverse)
 ```
 
 ```{r}
-# Getting URLs
+# Getting URL's
 searchresults <- read_html("https://hojskolesangbogen.dk/om-sangbogen/historie-om-bogen/19-udgave/liste-over-alle-sangene")
 
 urls <- searchresults %>% html_nodes("a") %>% html_attr("href") 
