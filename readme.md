@@ -18,7 +18,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About the project
 
-In this project, we will be finetuning the GPT-3 model on a lyrics generation task. The lyrics are from the Danish songbook named "Højskolesangbogen" which contains around 600 songs of cultural significance to Denmark. GPT-3 (Generative Pre-trained Transformer 3) is a state-of-the-art language model developed by OpenAI that can generate human-like text. By finetuning GPT-3 on a specific task, we can fine-tune its capabilities to perform that task more effectively.
+In this project, we will be finetuning the GPT-3 Davinci model on a lyrics generation task. The lyrics are from the Danish songbook named "Højskolesangbogen" which contains around 600 songs of cultural significance to Denmark. GPT-3 (Generative Pre-trained Transformer 3) is a state-of-the-art language model developed by OpenAI that can generate human-like text. By finetuning GPT-3 on a specific task, we can fine-tune its capabilities to perform that task more effectively.
 
 ## Requirements
 
@@ -30,8 +30,8 @@ In this project, we will be finetuning the GPT-3 model on a lyrics generation ta
 1. Clone this repository:
 
 ```
-git clone https://github.com/your-username/lyrics-generation.git
-cd lyrics-generation
+git clone https://github.com/jorgenhw/GrundtviGPT-3
+cd GrundtviGPT-3
 ```
 
 2. Install the required packages:
@@ -67,7 +67,13 @@ Evaluate the performance of the finetuned model by generating lyrics and compari
 ## Conclusion
 In this project, we have successfully finetuned the GPT-3 model on a lyrics generation task. You can further improve the performance of the model by using a larger dataset, increasing the number of training epochs, or fine-tuning on a specific artist or genre.
 
-# Instructions on h
+## Contact
+
+Feel free to contact the authors, [Emil Jessen](https://github.com/emiltj) or [Johan Horsmans](https://github.com/johanHorsmans) for any questions regarding the scripts.
+You may do so through our emails ([Emil](mailto:201807525@post.au.dk), [Johan](mailto:201810219@post.au.dk))
+<br />
+
+
 
 
 The two files in this folder contains instructions on how to replicate the results found in the paper: GrundtviGPT-3: Lyric
