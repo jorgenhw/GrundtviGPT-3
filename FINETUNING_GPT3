@@ -79,7 +79,7 @@
         "import openai\n",
         "import os\n",
         "\n",
-        "os.environ[\"OPENAI_API_KEY\"]=(\"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\")"
+        "os.environ[\"OPENAI_API_KEY\"]=(\"YOURAPI\")"
       ],
       "metadata": {
         "id": "LurupC9W5zoQ"
