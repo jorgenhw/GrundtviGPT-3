@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://i.imgur.com/t8mSDQS.png">
-    <img src="https://i.imgur.com/t8mSDQS.png" alt="Logo" width=150 height=150>
+    <img src="https://i.imgur.com/t8mSDQS.png" alt="Logo" width=200 height=200>
   </a>
   
   <h1 align="center">GrundtviGPT-3</h1> 
