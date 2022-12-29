@@ -81,6 +81,8 @@ Evaluate the performance of the finetuned model by generating lyrics and compari
 ## Conclusion
 In this project, we have successfully finetuned the GPT-3 model on a lyrics generation task. You can further improve the performance of the model by using a larger dataset, increasing the number of training epochs, fine-tuning on a specific artist or genre and last but not least, optimizing the hyperparameters.
 
+This project is part of an exam projekt in Cultural Data Science at Aarhus University, 2022.
+
 ## Contact
 
 Feel free to contact the authors, [Jørgen Højlund Wibe](https://github.com/jorgenhw) or [Niels Aalund Krogsgaard](https://github.com/nielsaak) for any questions regarding the project.
@@ -89,10 +91,3 @@ You may do so through our emails ([Jørgen](mailto:201807750@post.au.dk), [Niels
 
 ## Acknowledgements
 The tools provided in this readme are all developed and provided by [OpenAI](https://openai.com/). We refer to their [documentation page](https://beta.openai.com/docs/introduction) for more detailed information.
-
-
-This project is part of an exam projekt in Cultural Data Science at Aarhus University, 2022.
-
-Authors:
-Jørgen Højlund Wibe
-Niels Aalund Krogsgaard
