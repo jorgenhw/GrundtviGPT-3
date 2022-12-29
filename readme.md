@@ -84,7 +84,7 @@ You may do so through our emails ([Jørgen](mailto:201807750@post.au.dk), [Niels
 <br />
 
 
-These project is part of an exam projekt in Cultural Data Science at Aarhus University, 2022.
+This project is part of an exam projekt in Cultural Data Science at Aarhus University, 2022.
 
 Authors:
 Jørgen Højlund Wibe
