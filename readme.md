@@ -43,7 +43,11 @@ pip install -r requirements.txt
 export OPENAI_API_KEY=your_api_key
 ```
 ## Data
-We will be using a dataset of song lyrics from *Højskolesangbogen* as our training data. You can use any dataset of song lyrics that you like, or you can scrape lyrics from the internet. Make sure to preprocess the data and save it in a .txt or .csv file.
+We will be using a dataset of song lyrics from *Højskolesangbogen* as our training data. You can use any dataset of song lyrics that you like, or you can scrape lyrics from the internet. Make sure to preprocess the data and save it in a .txt or .csv file. The OpenAI API has a built in tool that 1) checks if your data is properly prepared and 2) if not makes the corrections automatically and then 3) converts your file into the .jsonl format that GPT-3 requires. You call the tool with the following line:
+```
+!openai tools fine_tunes.prepare_data -f $path
+```
+where ```path``` refers to your file.
 
 ## Finetuning
 1. Choose the GPT-3 model that you want to use for finetuning. You can find a list of available models and their sizes here: https://beta.openai.com/docs/models/gpt-3
