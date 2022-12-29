@@ -7,7 +7,7 @@
   
   <h1 align="center">GrundtviGPT-3</h1> 
   <h2 align="center"><i>Finetuning GPT-3 on Lyrics Generation</i></h2> 
-  <h3 align="center">Cognitive Science Bachelor's 2023</h3>
+  <h3 align="center">Cognitive Science // Cultural Data Science 2023</h3>
 
 
   <p align="center">
