@@ -6,6 +6,7 @@
   </a>
   
   <h1 align="center">GrundtviGPT-3</h1> 
+  <h2 align="center"><i>Finetuning GPT-3 on Lyrics Generation</i></h2> 
   <h3 align="center">Cognitive Science Bachelor's 2023</h3>
   <h4 align="center">Exam project, Cultural Data Science 2023</h4>
 
@@ -15,8 +16,8 @@
   </p>
 </p>
 
-# 
-# Finetuning GPT-3 on Lyrics Generation
+
+## Finetuning GPT-3 on Lyrics Generation
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1S0gwDVc3tvnO3uvM8i3oOiAPHBFZoKXH#scrollTo=VJftXkxeX6hu)
 
 
