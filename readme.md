@@ -81,7 +81,7 @@ Evaluate the performance of the finetuned model by generating lyrics and compari
 ## Conclusion
 In this project, we have successfully finetuned the GPT-3 model on a lyrics generation task. You can further improve the performance of the model by using a larger dataset, increasing the number of training epochs, fine-tuning on a specific artist or genre and last but not least, optimizing the hyperparameters.
 
-This project is part of an exam projekt in Cultural Data Science at Aarhus University, 2022.
+This project is part of an exam projekt in Cultural Data Science at Aarhus University, Denmark, 2023.
 
 ## Contact
 
