@@ -87,6 +87,9 @@ Feel free to contact the authors, [Jørgen Højlund Wibe](https://github.com/jor
 You may do so through our emails ([Jørgen](mailto:201807750@post.au.dk), [Niels](mailto:202008114@post.au.dk))
 <br />
 
+## Acknowledgements
+The tools provided in this readme are all developed and provided by [OpenAI](https://openai.com/). We refer to their [documentation page](https://beta.openai.com/docs/introduction) for more detailed information.
+
 
 This project is part of an exam projekt in Cultural Data Science at Aarhus University, 2022.
 
