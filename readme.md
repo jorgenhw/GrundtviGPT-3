@@ -8,7 +8,6 @@
   <h1 align="center">GrundtviGPT-3</h1> 
   <h2 align="center"><i>Finetuning GPT-3 on Lyrics Generation</i></h2> 
   <h3 align="center">Cognitive Science Bachelor's 2023</h3>
-  <h4 align="center">Exam project, Cultural Data Science 2023</h4>
 
 
   <p align="center">
@@ -16,13 +15,8 @@
   </p>
 </p>
 
-
-## Finetuning GPT-3 on Lyrics Generation
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1S0gwDVc3tvnO3uvM8i3oOiAPHBFZoKXH#scrollTo=VJftXkxeX6hu)
-
-
-
-## Introduction
+<!-- ABOUT THE PROJECT -->
+## About the project
 
 In this project, we will be finetuning the GPT-3 model on a lyrics generation task. The lyrics are from the Danish songbook named "Højskolesangbogen" which contains around 600 songs of cultural significance to Denmark. GPT-3 (Generative Pre-trained Transformer 3) is a state-of-the-art language model developed by OpenAI that can generate human-like text. By finetuning GPT-3 on a specific task, we can fine-tune its capabilities to perform that task more effectively.
 
